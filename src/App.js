@@ -2,7 +2,7 @@ import React from 'react';
 import { Route } from 'react-router-dom';
 import './App.css';
 import './components/cssFiles/logo.css';
-import Navbar from './components/Navbar';
+import Navbar from './components/navbar/Navbar';
 import swirl_sm from './assets/swirl_sm.jpg';
 import KayakProject from './components/projects/KayakProject';
 import AbodeProject from './components/projects/AbodeProject';
@@ -11,8 +11,8 @@ import SimonProject from './components/projects/SimonProject';
 import MatchGame from './components/projects/MatchGame';
 import EarthProject from './components/projects/EarthProject';
 
-import AboutMe from './components/AboutMe';
-import Home from './components/Home';
+import About from './components/aboutMe/About';
+import Home from './components/home/Home';
 import SplashScreen from './components/splash/SplashScreen';
 
 function App() {
@@ -27,7 +27,7 @@ function App() {
 				<div className="main">
 					<Route exact path="/" component={SplashScreen} />
 					<Route path="/projects" component={Home} />
-					<Route path="/about-me" component={AboutMe} />
+					<Route path="/about-me" component={About} />
 					<Route path="/kayak" component={KayakProject} />
 					<Route path="/abode" component={AbodeProject} />
 					<Route path="/pets" component={PetsProject} />
