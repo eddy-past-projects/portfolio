@@ -1,38 +1,154 @@
+* {
+	box-sizing: border-box;
+}
+
+body {
+	overscroll-behavior: none;
+}
+
 .App {
-  text-align: center;
+	text-align: center;
+}
+.container {
+	height: 100vh;
+	margin: 0;
+	overflow: hidden;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+.wrapper {
+	display: flex;
+	flex-flow: row wrap;
+	font-weight: bold;
+	text-align: center;
+	position: relative;
+	height: 80vh;
+	width: 100vw;
+	margin-top: 15vh;
+	justify-content: center;
+	align-items: center;
+}
+.aside.logo {
+	cursor: pointer;
+	position: fixed;
+	width: 38vw;
+	left: 0;
+	top: 0;
+	height: 100vh;
+}
+.main {
+	width: 60vw;
+	margin-left: 38vw;
+	height: 80vh;
+	overflow-y: scroll;
+	position: relative;
+	overflow: auto;
+}
+.swirl {
+	bottom: 0;
+	height: 100px;
+	left: 0;
+	margin: auto;
+	position: absolute;
+	top: 0;
+	right: 0;
+	top: -10vh;
+}
+a {
+	text-decoration: none;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+.fixPosition {
+	position: fixed;
+}
+.relPosition {
+	position: relative;
+}
+/* ///////// media queries ///////// */
+
+@media all and (min-width: 800px) {
+	.main {
+		flex: 2 0px;
+	}
+	.logo {
+		order: 1;
+	}
+	.main {
+		order: 2;
+	}
+	.footer {
+		order: 4;
+	}
+}
+@media all and (max-width: 770px) {
+	.main {
+		height: 75vh;
+		margin-bottom: auto;
+		/* margin-top: 160px; */
+	}
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+@media (min-width: 600px) {
+	.aside {
+		flex: 1;
+	}
+	.main {
+		flex: 1;
+	}
+	.main {
+		text-align: center;
+	}
+	.main {
+		text-align: left;
+	}
 }
+@media all and (max-width: 600px) {
+	.container {
+		display: flex;
+	}
+	/* .main {
+		width: 100vw;
+		margin: 0;
+		/* position: fixed; */
+	/* top: 210px;
+		height: 72vh; */
+	/* height: 83vh; */
+	/* } */
 
-.App-link {
-  color: #61dafb;
-}
+	.main {
+		width: 100vw;
+		margin: 0;
+		position: fixed;
+		/* position: absolute; */
+		top: 245px;
+		height: 57vh;
+		/* top: 125px;
+		/* height: 83vh; */
+	}
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+	.aside.logo {
+		width: 100vw;
+		z-index: 20;
+		background: white;
+		top: 110px;
+		height: 110px;
+		position: fixed;
+	}
+
+	.swirl {
+		width: 80px;
+		height: 80px;
+		top: 0;
+	}
+	.wrapper {
+		/* margin-top: 100px; */
+		display: flex;
+		flex-direction: column;
+		align-items: flex-start;
+		align-content: center;
+	}
 }
+/* @media all and (max-width: 400px) {
+	.main {
+		top: 230px;
+	}
+} */
