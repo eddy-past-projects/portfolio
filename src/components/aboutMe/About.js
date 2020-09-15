@@ -1,6 +1,8 @@
 import React from 'react';
 import linkedin2 from '../../assets/linkedin2.jpg';
-import resume_final from '../../assets/resume_final.pdf';
+import resume_no_intro from '../../assets/resume_no_intro.pdf';
+import cynthiaeddy_resume from '../../assets/cynthiaeddy_resume.pdf';
+
 import '../cssFiles/AboutMe.css';
 
 const About = () => {
@@ -24,10 +26,10 @@ const About = () => {
 
 				<br />
 				<footer>
-					<a href={resume_final}>
+					<a href={resume_no_intro}>
 						<h5>click here to view my resume | </h5>
 					</a>
-					<a href={resume_final} download>
+					<a href={cynthiaeddy_resume} download>
 						<h5> download my resume | </h5>
 					</a>
 					<a href="https://www.linkedin.com/in/cynthiaeddy">
