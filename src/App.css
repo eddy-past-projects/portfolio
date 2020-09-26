@@ -134,10 +134,10 @@ a {
 		position: fixed;
 	}
 
-	.swirl {
+	.mobile {
 		width: 80px;
 		height: 80px;
-		top: 0;
+		margin-top: 2vh;
 	}
 	.wrapper {
 		/* margin-top: 100px; */
