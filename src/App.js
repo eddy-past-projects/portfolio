@@ -15,29 +15,54 @@ import About from './components/aboutMe/About';
 import Home from './components/home/Home';
 import SplashScreen from './components/splash/SplashScreen';
 
-function App() {
-	return (
-		<div className="container">
-			<Navbar />
+class App extends React.Component {
+	state = {
+		width: window.innerWidth
+	};
 
-			<div className="wrapper">
-				<aside className="aside logo">
-					<img src={swirl_sm} className="swirl" alt="logo" />
-				</aside>
-				<div className="main">
-					<Route exact path="/" component={SplashScreen} />
-					<Route path="/projects" component={Home} />
-					<Route path="/about-me" component={About} />
-					<Route path="/kayak" component={KayakProject} />
-					<Route path="/abode" component={AbodeProject} />
-					<Route path="/pets" component={PetsProject} />
-					<Route path="/simon" component={SimonProject} />
-					<Route path="/match-game" component={MatchGame} />
-					<Route path="/earth-paints" component={EarthProject} />
+	componentDidMount() {
+		window.addEventListener('resize', this.handleWindowSizeChange);
+	}
+
+	componentWillUnmount() {
+		window.removeEventListener('resize', this.handleWindowSizeChange);
+	}
+
+	handleWindowSizeChange = () => {
+		this.setState({ width: window.innerWidth });
+	};
+	render() {
+		let isMobile;
+		let width = this.state.width;
+		width <= 600 ? (isMobile = true) : (isMobile = false);
+		return (
+			<div className="container">
+				<Navbar />
+
+				<div className="wrapper">
+					<aside className="aside logo">
+						{isMobile ? (
+							<img src={swirl_sm} className="mobile" alt="logo" />
+						) : (
+							<img src={swirl_sm} className="swirl" alt="logo" />
+						)}
+						{/* <img src={swirl_sm} className="swirl mobile" alt="logo" /> */}
+					</aside>
+					<div className="main">
+						<Route exact path="/" component={SplashScreen} />
+						<Route path="/projects" component={Home} />
+						<Route path="/about-me" component={About} />
+						<Route path="/kayak" component={KayakProject} />
+						<Route path="/abode" component={AbodeProject} />
+						<Route path="/pets" component={PetsProject} />
+						<Route path="/simon" component={SimonProject} />
+						<Route path="/match-game" component={MatchGame} />
+						<Route path="/earth-paints" component={EarthProject} />
+					</div>
 				</div>
 			</div>
-		</div>
-	);
+		);
+	}
 }
 
 export default App;
