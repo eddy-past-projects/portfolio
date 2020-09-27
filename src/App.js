@@ -46,7 +46,6 @@ class App extends React.Component {
 						) : (
 							<img src={swirl_sm} className="swirl" alt="logo" />
 						)}
-						{/* <img src={swirl_sm} className="swirl mobile" alt="logo" /> */}
 					</aside>
 					<div className="main">
 						<Route exact path="/" component={SplashScreen} />
