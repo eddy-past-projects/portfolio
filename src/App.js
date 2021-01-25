@@ -10,6 +10,8 @@ import PetsProject from './components/projects/PetsProject';
 import SimonProject from './components/projects/SimonProject';
 import MatchGame from './components/projects/MatchGame';
 import EarthProject from './components/projects/EarthProject';
+import Jim from './components/projects/Jim';
+
 
 import About from './components/aboutMe/About';
 import Home from './components/home/Home';
@@ -17,7 +19,8 @@ import SplashScreen from './components/splash/SplashScreen';
 
 class App extends React.Component {
 	state = {
-		width: window.innerWidth
+		width: window.innerWidth,
+		hovered: false
 	};
 
 	componentDidMount() {
@@ -31,6 +34,7 @@ class App extends React.Component {
 	handleWindowSizeChange = () => {
 		this.setState({ width: window.innerWidth });
 	};
+
 	render() {
 		let isMobile;
 		let width = this.state.width;
@@ -44,7 +48,14 @@ class App extends React.Component {
 						{isMobile ? (
 							<img src={swirl_sm} className="mobile" alt="logo" />
 						) : (
-							<img src={swirl_sm} className="swirl" alt="logo" />
+							<img
+								src={swirl_sm}
+								className="swirl"
+								alt="logo"
+								onMouseOut={() => this.setState({ hovered: false })}
+								onMouseOver={() => this.setState({ hovered: true })}
+								style={{ transition: `${this.state.hovered ? '2s' : '2s;'}` }}
+							/>
 						)}
 					</aside>
 					<div className="main">
@@ -57,6 +68,8 @@ class App extends React.Component {
 						<Route path="/simon" component={SimonProject} />
 						<Route path="/match-game" component={MatchGame} />
 						<Route path="/earth-paints" component={EarthProject} />
+						<Route path="/james" component={Jim} />
+
 					</div>
 				</div>
 			</div>
