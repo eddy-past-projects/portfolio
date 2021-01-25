@@ -13,10 +13,10 @@ const Jim = () => {
 
 
 				<h3>
-					<strong>James Oseland's World Food</strong> is Jame's website for his new book series.
+					<strong>James Oseland's World Food</strong> is James' website for his new book series.
 					<ul>
             <li>Incorporates Mailchimp for newsletter signup.</li>
-            <li>Renders two Carousels (one built from scratch, the other using a library).</li>
+            <li>Renders two Carousels: one built from scratch, the other using a library.</li>
 						<li>Displays a React frontend with CSS grid and flexbox, being responsive. </li>
 					</ul>
 				</h3>
