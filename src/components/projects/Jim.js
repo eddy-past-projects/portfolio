@@ -28,7 +28,7 @@ const Jim = () => {
           <a href="https://jamesoseland.com">
             <i className="fas fa-play-circle fa-2x" />
           </a>
-          <a href="https://github.com/cynthiaeddy/jimmy-choo">
+          <a href="https://github.com/cynthiaeddy/jim-wf">
             <i className="fab fa-github fa-2x" />
           </a>
         </div>

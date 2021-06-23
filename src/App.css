@@ -4,7 +4,14 @@
 
 body {
 	overscroll-behavior: none;
+
 }
+:root body {
+	font-size: 62.5%;
+	margin: 0;
+	font-size: 1.6rem;
+}
+
 
 .App {
 	text-align: center;
