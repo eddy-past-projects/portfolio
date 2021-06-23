@@ -15,19 +15,11 @@
 	animation: spin-1 2s ease-in-out;
 }
 
-/* img        {animation: spin-cat-1 2s;}
-img:active {animation: spin-cat-2 2s;}
-@keyframes spin-cat-1 {50%{transform:rotateY(180deg);}}
-@keyframes spin-cat-2 {50%{transform:rotateY(180deg);}} */
-
-/* .swirl.mobile {
-	-webkit-animation: spin 2s ease-in-out;
-	-moz-animation: spin 2s ease-in-out;
-	animation: spin 2s ease-in-out; */
-/* animation-iteration-count: 3; */
-/* } */
-
-/* animation-iteration-count: 2; */
+.swirl:active {
+	-webkit-animation: spin-1 2s ease-in-out;
+	-moz-animation: spin-1 2s ease-in-out;
+	animation: spin-1 2s ease-in-out;
+}
 
 @-moz-keyframes spin {
 	100% {

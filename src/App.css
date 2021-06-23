@@ -4,7 +4,14 @@
 
 body {
 	overscroll-behavior: none;
+
 }
+:root body {
+	font-size: 62.5%;
+	margin: 0;
+	font-size: 1.6rem;
+}
+
 
 .App {
 	text-align: center;
@@ -83,7 +90,6 @@ a {
 	.main {
 		height: 75vh;
 		margin-bottom: auto;
-		/* margin-top: 160px; */
 	}
 }
 
@@ -105,24 +111,19 @@ a {
 	.container {
 		display: flex;
 	}
-	/* .main {
-		width: 100vw;
-		margin: 0;
-		/* position: fixed; */
-	/* top: 210px;
-		height: 72vh; */
-	/* height: 83vh; */
-	/* } */
 
 	.main {
 		width: 100vw;
 		margin: 0;
 		position: fixed;
-		/* position: absolute; */
 		top: 245px;
+<<<<<<< HEAD
 		height: 55vh;
 		/* top: 125px;
 		/* height: 83vh; */
+=======
+		height: 56vh;
+>>>>>>> font-size
 	}
 
 	.aside.logo {
@@ -140,15 +141,9 @@ a {
 		margin-top: 2vh;
 	}
 	.wrapper {
-		/* margin-top: 100px; */
 		display: flex;
 		flex-direction: column;
 		align-items: flex-start;
 		align-content: center;
 	}
 }
-/* @media all and (max-width: 400px) {
-	.main {
-		top: 230px;
-	}
-} */
