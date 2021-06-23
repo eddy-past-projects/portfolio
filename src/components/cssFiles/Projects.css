@@ -21,6 +21,9 @@
   position: relative;
 }
 
+.project-solo.escape {
+  border: 1px solid grey;
+}
 img.project-solo {
   text-align: left;
   letter-spacing: 1px;

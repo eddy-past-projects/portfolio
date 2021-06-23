@@ -6,7 +6,11 @@ const EscapeRoom = () => {
     <div className="solo-card">
       <div className="inner-card">
         <a href="https://white-door-escape.netlify.app">
-          <img src={whiteDoor1} className="project-solo" alt="escape-room" />
+          <img
+            src={whiteDoor1}
+            className="project-solo escape"
+            alt="escape-room"
+          />
         </a>
 
         <h3>
