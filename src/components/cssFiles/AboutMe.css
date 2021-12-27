@@ -102,6 +102,26 @@ h5:hover {
   }
   .main {
     /* padding-bottom: 100px; */
-    height: 61vh;
+    height: 57vh;
   }
 }
+
+@media not all and (max-width: 600px) {
+  @media {
+    .safari_only.main {
+      /* padding-bottom: 100px; */
+      height: 60vh;
+    }
+  }
+}
+
+/* }
+@media not all and (min-resolution:.001dpcm) { @media {
+
+  .safari_only {
+
+      color:#0000FF;
+      background-color:#CCCCCC;
+
+  }
+}} */

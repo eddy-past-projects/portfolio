@@ -62,7 +62,7 @@ class App extends React.Component {
             <Route path="/projects" component={Home} />
             <Route path="/about-me" component={About} />
             <Route path="/kayak" component={KayakProject} />
-            <Route path="/abode" component={AbodeProject} />
+
             <Route path="/pets" component={PetsProject} />
             <Route path="/simon" component={SimonProject} />
             <Route path="/match-game" component={MatchGame} />

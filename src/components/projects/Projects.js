@@ -43,13 +43,6 @@ class Projects extends React.Component {
         <Link to="/simon">
           <img src={simon2} className="project-card simon" alt="simon card" />
         </Link>
-        <Link to="/abode">
-          <img
-            src={abode1}
-            className="project-card abode"
-            alt="abode haven cards"
-          />
-        </Link>
       </div>
     )
   }
