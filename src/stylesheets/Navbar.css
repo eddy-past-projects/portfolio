@@ -45,13 +45,13 @@ h2 {
   flex-wrap: row wrap;
 }
 
-@media all and (max-width: 800px) {
+@media (max-width: 800px) {
   #navbar {
     justify-content: space-around;
     margin: 20px;
   }
 }
-@media all and (max-width: 770px) {
+@media (max-width: 770px) {
   #navbar {
     margin-left: 0;
     background: white;
@@ -61,14 +61,12 @@ h2 {
     height: 120px;
   }
 }
-@media all and (max-width: 600px) {
+@media (max-width: 600px) {
   #navbar {
     flex-flow: column wrap;
     padding: 0;
     text-align: center;
     background: white;
-    /* padding-top: 20px; */
-    /* padding-bottom: 35px; */
     margin-top: 20px;
   }
 }

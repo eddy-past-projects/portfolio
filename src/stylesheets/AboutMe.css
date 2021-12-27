@@ -32,7 +32,7 @@ h5:hover {
   margin-top: 7.5vh;
   margin-right: 40vh;
 }
-@media all and (max-width: 1300px) {
+@media (max-width: 1300px) {
   .my-photo {
     right: -125px;
   }
@@ -50,7 +50,7 @@ h5:hover {
   }
 }
 
-@media all and (max-width: 770px) {
+@media (max-width: 770px) {
   .text {
     margin: 0 50px 0 20px;
     padding-bottom: 10px;
@@ -73,7 +73,7 @@ h5:hover {
   }
 }
 
-@media all and (max-width: 600px) {
+@media (max-width: 600px) {
   .my-photo {
     text-align: center;
     display: flex;
@@ -100,7 +100,6 @@ h5:hover {
     margin-top: 15px;
   }
   .main {
-    /* padding-bottom: 100px; */
     height: 57vh;
   }
 }
@@ -108,19 +107,7 @@ h5:hover {
 @media not all and (max-width: 600px) {
   @media {
     .safari_only.main {
-      /* padding-bottom: 100px; */
       height: 60vh;
     }
   }
 }
-
-/* }
-@media not all and (min-resolution:.001dpcm) { @media {
-
-  .safari_only {
-
-      color:#0000FF;
-      background-color:#CCCCCC;
-
-  }
-}} */

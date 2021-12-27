@@ -39,7 +39,6 @@ img.project-solo {
 .cards {
   display: grid;
   grid-template-columns: 1fr 1fr;
-  width: 50vw;
 }
 
 img.project-card {
@@ -99,13 +98,13 @@ strong {
 ul {
   margin-top: 0;
 }
-@media all and(min-width:771px) and(max-width:1200px) {
-  .main.cards {
-    width: 100vw;
+@media (min-width: 1200px) {
+  .cards {
+    width: 80%;
   }
 }
 
-@media all and (max-width: 770px) {
+@media (max-width: 770px) {
   .cards {
     grid-template-columns: 1fr;
     margin: 0 20px 0px 20px;
@@ -130,7 +129,7 @@ ul {
     margin-top: 20px;
   }
 }
-@media all and (max-width: 600px) {
+@media (max-width: 600px) {
   .solo-card {
     width: 90%;
     position: relative;
