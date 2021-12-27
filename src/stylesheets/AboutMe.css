@@ -27,7 +27,8 @@ h5:hover {
 }
 
 .text {
-  /* positsion: fixed; */
+  position: fixed;
+
   margin-top: 7.5vh;
   margin-right: 40vh;
 }
@@ -47,15 +48,13 @@ h5:hover {
   .aboutme-container.text {
     position: relative;
   }
-  /* .my-photo {
-    margin-right: 50px;
-  } */
 }
 
 @media all and (max-width: 770px) {
   .text {
     margin: 0 50px 0 20px;
     padding-bottom: 10px;
+    position: relative;
   }
   .text h3 {
     margin-top: 50px;

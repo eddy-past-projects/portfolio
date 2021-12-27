@@ -5,10 +5,9 @@ import simon2 from '../../assets/simon2.jpg'
 import wint3 from '../../assets/wint3.png'
 import kayaksWh2 from '../../assets/kayaksWh2.png'
 import match_gamealt3 from '../../assets/match_gamealt3.jpg'
-import abode1 from '../../assets/abode1.png'
 import james from '../../assets/james.png'
 import whiteDoor1 from '../../assets/whiteDoor1.jpg'
-import '../cssFiles/Projects.css'
+import '../../stylesheets/Projects.css'
 
 class Projects extends React.Component {
   render() {

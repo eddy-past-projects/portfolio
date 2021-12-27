@@ -39,6 +39,7 @@ img.project-solo {
 .cards {
   display: grid;
   grid-template-columns: 1fr 1fr;
+  width: 50vw;
 }
 
 img.project-card {
@@ -97,6 +98,11 @@ strong {
 }
 ul {
   margin-top: 0;
+}
+@media all and(min-width:771px) and(max-width:1200px) {
+  .main.cards {
+    width: 100vw;
+  }
 }
 
 @media all and (max-width: 770px) {

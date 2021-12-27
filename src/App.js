@@ -1,19 +1,18 @@
 import React from 'react'
 import { Route } from 'react-router-dom'
 import './App.css'
-import './components/cssFiles/logo.css'
-import Navbar from './components/navbar/Navbar'
+import './stylesheets/logo.css'
+import Navbar from './components/Navbar'
 import swirl_sm from './assets/swirl_sm.jpg'
 import KayakProject from './components/projects/KayakProject'
-import AbodeProject from './components/projects/AbodeProject'
 import PetsProject from './components/projects/PetsProject'
 import SimonProject from './components/projects/SimonProject'
 import MatchGame from './components/projects/MatchGame'
 import EarthProject from './components/projects/EarthProject'
 import Jim from './components/projects/Jim'
 import EscapeRoom from './components/projects/EscapeRoom'
-import About from './components/aboutMe/About'
-import Home from './components/home/Home'
+import AboutMe from './components/AboutMe'
+import Home from './components/Home'
 import SplashScreen from './components/splash/SplashScreen'
 
 class App extends React.Component {
@@ -60,7 +59,7 @@ class App extends React.Component {
           <div className="main">
             <Route exact path="/" component={SplashScreen} />
             <Route path="/projects" component={Home} />
-            <Route path="/about-me" component={About} />
+            <Route path="/about-me" component={AboutMe} />
             <Route path="/kayak" component={KayakProject} />
 
             <Route path="/pets" component={PetsProject} />

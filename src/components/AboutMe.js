@@ -1,8 +1,8 @@
 import React from 'react'
-import linkedin2 from '../../assets/linkedin2.jpg'
-import cynthiaeddy_resume from '../../assets/cynthiaeddy_resume.pdf'
+import linkedin2 from '../assets/linkedin2.jpg'
+import cynthiaeddy_resume from '../assets/cynthiaeddy_resume.pdf'
 
-import '../cssFiles/AboutMe.css'
+import '../stylesheets/AboutMe.css'
 
 const About = () => {
   return (
