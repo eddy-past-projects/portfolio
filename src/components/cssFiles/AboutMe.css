@@ -1,0 +1,105 @@
+footer a {
+  margin: 0;
+}
+h5 {
+  font-family: 'Work Sans', sans-serif;
+  font-size: 0.8rem;
+  letter-spacing: 0.5em;
+  text-transform: uppercase;
+  font-weight: 700;
+  display: inline;
+  color: black;
+  text-align: left;
+  line-height: 2.5;
+}
+
+h5:hover {
+  color: grey;
+}
+
+.my-photo {
+  border-radius: 50%;
+  width: 125px;
+  height: 125px;
+  position: absolute;
+  top: -41px;
+  right: -125px;
+}
+
+.text {
+  /* positsion: fixed; */
+  margin-top: 7.5vh;
+  margin-right: 40vh;
+}
+@media all and (max-width: 1300px) {
+  .my-photo {
+    right: -125px;
+  }
+  .text {
+    margin-right: 20vh;
+  }
+}
+@media (min-width: 600) and (max-width: 770) {
+  .aboutme-container {
+    height: 100vh;
+    overflow-y: visible;
+  }
+  .aboutme-container.text {
+    position: relative;
+  }
+  /* .my-photo {
+    margin-right: 50px;
+  } */
+}
+
+@media all and (max-width: 770px) {
+  .text {
+    margin: 0 50px 0 20px;
+  }
+  .text h3 {
+    margin-top: 50px;
+    font-size: 1.2rem;
+  }
+
+  .my-photo {
+    margin-top: 40px;
+    margin-left: 260px;
+    right: 0;
+    margin-right: 50px;
+  }
+  .image {
+    left: 45vw;
+    height: 100px;
+  }
+}
+
+@media all and (max-width: 600px) {
+  .my-photo {
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    margin: auto;
+    float: none;
+    top: 0;
+    right: 50px;
+  }
+
+  .image {
+    left: 0;
+    height: 125px;
+  }
+  .text {
+    padding-left: 5%;
+    padding-right: 5%;
+    text-align: left;
+    width: 100%;
+    position: relative;
+    margin-left: 0;
+  }
+  .text h3 {
+    margin-top: 15px;
+  }
+  .main {
+    padding-bottom: 100px;
+  }
+}
