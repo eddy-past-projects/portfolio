@@ -41,36 +41,36 @@ class App extends React.Component {
       <div className="container">
         <Navbar />
 
-        <div className="wrapper">
-          <aside className="aside logo">
-            {isMobile ? (
-              <img src={swirl_sm} className="mobile" alt="logo" />
-            ) : (
-              <img
-                src={swirl_sm}
-                className="swirl"
-                alt="logo"
-                onMouseOut={() => this.setState({ hovered: false })}
-                onMouseOver={() => this.setState({ hovered: true })}
-                style={{ transition: `${this.state.hovered ? '2s' : '2s'}` }}
-              />
-            )}
-          </aside>
-          <div className="main">
-            <Route exact path="/" component={SplashScreen} />
-            <Route path="/projects" component={Home} />
-            <Route path="/about-me" component={AboutMe} />
-            <Route path="/kayak" component={KayakProject} />
+        {/* <div className="wrapper"> */}
+        <aside className="aside logo">
+          {isMobile ? (
+            <img src={swirl_sm} className="mobile" alt="logo" />
+          ) : (
+            <img
+              src={swirl_sm}
+              className="swirl"
+              alt="logo"
+              onMouseOut={() => this.setState({ hovered: false })}
+              onMouseOver={() => this.setState({ hovered: true })}
+              style={{ transition: `${this.state.hovered ? '2s' : '2s'}` }}
+            />
+          )}
+        </aside>
+        <div className="main">
+          <Route exact path="/" component={SplashScreen} />
+          <Route path="/projects" component={Home} />
+          <Route path="/about-me" component={AboutMe} />
+          <Route path="/kayak" component={KayakProject} />
 
-            <Route path="/pets" component={PetsProject} />
-            <Route path="/simon" component={SimonProject} />
-            <Route path="/match-game" component={MatchGame} />
-            <Route path="/earth-paints" component={EarthProject} />
-            <Route path="/james" component={Jim} />
-            <Route path="/escape-room" component={EscapeRoom} />
-          </div>
+          <Route path="/pets" component={PetsProject} />
+          <Route path="/simon" component={SimonProject} />
+          <Route path="/match-game" component={MatchGame} />
+          <Route path="/earth-paints" component={EarthProject} />
+          <Route path="/james" component={Jim} />
+          <Route path="/escape-room" component={EscapeRoom} />
         </div>
       </div>
+      // </div>
     )
   }
 }

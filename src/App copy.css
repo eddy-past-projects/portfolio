@@ -20,7 +20,7 @@ body {
   overflow: hidden;
 }
 
-.container {
+.wrapper {
   display: flex;
   flex-flow: row wrap;
   font-weight: bold;
